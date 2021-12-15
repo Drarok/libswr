@@ -1,14 +1,13 @@
-# libSWR
+# libSWR [![Node.js CI](https://github.com/Drarok/libswr/actions/workflows/nodejs.yml/badge.svg)](https://github.com/Drarok/libswr/actions/workflows/nodejs.yml)
 
-A very simple implementation of stale-while-revalidate, but for your code
-rather than HTTP caches.
+A very simple implementation of stale-while-revalidate, but for your code rather than HTTP caches.
 
 ## Usage
 
 ```js
 const swr = require('libswr');
 
-// Example uses an HTTP requests as an example, you can write any async code.
+// This example uses HTTP, but you can write any async code.
 const myGetterFunction = swr(async () => {
 	const res = await fetch('/path/to/data');
 	return res.json();
