@@ -2,7 +2,8 @@
   "name": "libswr",
   "version": "1.0.0",
   "description": "A lightweight stale-while-revalidate library",
-  "main": "index.js",
+  "main": "lib/swr.js",
+  "types": "lib/swr.d.ts",
   "author": "Mat Gadd <source@catchall.drarok.com>",
   "license": "MIT",
   "devDependencies": {
